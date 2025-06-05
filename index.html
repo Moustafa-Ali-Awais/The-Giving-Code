@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Giving Code</title>
+  <!-- ربط ملف CSS -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="login-styles.css">
+  <link rel="stylesheet" href="about-styles.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="logo">
+      <!-- رابط إلى الصفحة الرئيسية عند الضغط على الشعار -->
+      <a href="#home" id="logoLink">
+        <img src="https://i.postimg.cc/4d7XQ39T/The-Giving-Code-Logo.jpg" alt="Logo">
+      </a>
+    </div>
+    <div class="nav-links">
+      <a href="#home" id="homeLink">Home</a>
+      <a href="#about" id="aboutLink">About</a>
+      <a href="#store" id="storeLink">Store</a>
+      <a href="#courses" id="coursesLink">Courses</a>
+      <a href="how.html" id="howLink">How</a>
+      <a href="#login" id="loginBtn">Login</a>
+    </div>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home" class="hero-section">
+    <div class="hero-content">
+      <h1 class="main-title">The Giving Code</h1>
+      <p class="tagline">Code Today, Lead Tomorrow</p>
+      <button class="cta-button" onclick="window.location.href='soon.html'">Our Journey</button>
+    </div>
+  </section>
+
+  <!-- Login Section -->
+  <section id="login" class="login-section" style="display: none;">
+    <div class="container">
+        <div class="form-container">
+            <h2>Login</h2>
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" placeholder="Enter your username">
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter your password">
+            </div>
+            <div class="form-group">
+                <button type="button" id="loginButton" class="login-btn">Login</button>
+            </div>
+        </div>
+        <div class="animation-container">
+            <div id="character">
+                <div class="head">
+                    <div id="eyes">
+                        <div class="eye" id="left-eye"></div>
+                        <div class="eye" id="right-eye"></div>
+                    </div>
+                    <div id="sunglasses" class="hidden"></div>
+                </div>
+                <div class="body"></div>
+            </div>
+        </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about-section" style="display: none;">
+    <div class="container">
+      <!-- Section 1: About The Giving Code -->
+      <section class="about-section">
+        <h1>About "The Giving Code"</h1>
+        <p>
+          The Giving Code combines technology and compassion to inspire positive change. 
+          This platform was built from scratch, not using any ready-made templates, to bring our unique vision to life.
+        </p>
+      </section>
+      
+      <!-- Section 2: About the Creators -->
+      <section class="creators-section">
+        <h2>About the Creators</h2>
+        <p>
+          We are Moustafa and Ahmed, the creators of this website. Inspired by ALX's motto 
+          "Do Hard Things," we aim to guide future leaders and empower them with the lessons we've learned. 
+          This project is our way of giving back and inspiring others to create change.
+        </p>
+      </section>
+      
+      <!-- Section 3: Why Choose Us -->
+      <section class="why-us-section">
+        <h2>Why Choose Us?</h2>
+        <p>
+          Over the past three years, we've faced numerous challenges and have grown immensely through 
+          ALX's teachings. We understand your struggles and have dedicated ourselves to making a difference. 
+          If we can create change, so can you.
+        </p>
+      </section>
+      
+      <!-- Section 4: Ideas & Buttons -->
+      <section class="ideas-section">
+        <h2>Our Ideas</h2>
+        <div class="buttons">
+          <button onclick="showContent('name')">Name</button>
+          <button onclick="showContent('logo')">Logo</button>
+          <button onclick="showContent('other')">Other</button>
+        </div>
+        <div id="ideas-content">
+          <!-- Name Content -->
+          <div id="name" class="content">
+            <h3>Project Name</h3>
+            <ul>
+              <li>Impact Web</li>
+              <li>HopeLink</li>
+              <li>Share to Care</li>
+              <li>Code Help</li>
+              <li>Guide Me with Code</li>
+            </ul>
+            <p><strong>The Giving Code</strong>: Connects the concept of technology (code) with charitable giving, highlighting the innovative and altruistic nature of the project.</p>
+          </div>
+          <!-- Logo Content -->
+          <div id="logo" class="content">
+            <h3>Logo Options</h3>
+            <p>The logo represents a heart made of electronic circuits, symbolizing the fusion of technology with giving to create a positive impact.</p>
+            <p>Our Choices:</p>
+            <div class="logo-options">
+              <div class="logo-slot">Your Logo Placeholder</div>
+              <div class="logo-slot">Friend's Logo Placeholder</div>
+            </div>
+          </div>
+          <!-- Other Content -->
+          <div id="other" class="content">
+            <h3>Other Concepts</h3>
+            <div class="images-placeholder">
+              <div class="image-slot">Image 1</div>
+              <div class="image-slot">Image 2</div>
+              <div class="image-slot">Image 3</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!-- Section 5: Feedback -->
+      <section class="special-thanks-section">
+        <h2>Special thanks!</h2>
+        <p><span style='color: white;'>Ahmed Abd-Elazim</span></p>
+        <p>Consultant</p>
+      </section>
+      
+      <!-- Placeholder for Image -->
+      <section class="image-section">
+        <h2>Feedback</h2>
+        <img src="https://i.postimg.cc/dVC7WRtQ/The-Giving-Code-Feedback.png" alt="The Giving Code Feedback">
+      </section>
+    </div>
+  </section>
+
+  <!-- Store Section -->
+  <section id="store" class="store-section" style="display: none;">
+    <h2>Store</h2>
+    <div class="product-container">
+      <!-- Clothing Products -->
+      <div class="product">
+        <img src="https://i.postimg.cc/vmWmtYks/image.jpg" alt="Palestinian Keffiyeh">
+        <h3>Palestinian Keffiyeh</h3>
+        <p>Price: $20</p>
+        <button>Buy Now</button>
+      </div>
+      <div class="product">
+        <img src="https://i.postimg.cc/Y0VkwZZR/B1i3e-NNHB4-L-CLa-2140-2000-71-Ui-E58-Yx6-L-png-0-0-2140-2000-0-0-0-0-2140-0-2000-0-AC-SX425.jpg" alt="Palestine T-Shirt">
+        <h3>Palestine T-Shirt</h3>
+        <p>Price: $15</p>
+        <button>Buy Now</button>
+      </div>
+      <div class="product">
+        <img src="https://i.postimg.cc/JnYCbSr8/Untitled-design.png" alt="Watermelon Free Palestine Cap">
+        <h3>Watermelon Free Palestine Cap</h3>
+        <p>Price: $10</p>
+        <button>Buy Now</button>
+      </div>
+
+      <!-- Books -->
+      <div class="product">
+        <img src="https://i.postimg.cc/65vxvHDs/Don-t-Make-Me-Think.jpg" alt="Don’t Make Me Think">
+        <h3>Don’t Make Me Think</h3>
+        <p>Author: Steve Krug</p>
+        <p>Category: Web Designing</p>
+        <button>Buy Now</button>
+      </div>
+      <div class="product">
+        <img src="https://i.postimg.cc/DftyHbhT/Mountains-Beyond-Mountains.jpg" alt="Mountains Beyond Mountains">
+        <h3>Mountains Beyond Mountains</h3>
+        <p>Author: Tracy Kidder</p>
+        <p>Category: Humanitarian Issues</p>
+        <button>Buy Now</button>
+      </div>
+      <div class="product">
+        <img src="https://i.postimg.cc/TPYRgVVr/The-Psychology-of-Money.jpg" alt="The Psychology of Money">
+        <h3>The Psychology of Money</h3>
+        <p>Author: Morgan Housel</p>
+        <p>Category: Money Management</p>
+        <button>Buy Now</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Courses Section -->
+  <section id="courses" class="courses-section" style="display: none;">
+    <h2>Courses</h2>
+    <div class="course">
+      <iframe width="100%" height="315" src="https://www.youtube.com/embed/videoseries?list=PLDoPjvoNmBAx8xKvAXpb6f0Urj98Xo7zg" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div class="course">
+      <iframe width="100%" height="315" src="https://www.alxafrica.com/programmes/" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div class="course">
+      <iframe width="100%" height="315" src="https://www.youtube.com/embed/FjEFVpSW22w" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <!-- Account Info Section -->
+  <section id="account" class="account-section" style="display: none;">
+    <h2>Account Information</h2>
+    <p><strong>Name:</strong> Ahmed Tarek</p>
+  </section>
+
+  <!-- ربط ملف JavaScript -->
+  <script src="script.js"></script>
+  <script src="login.js"></script>
+  <script src="about.js"></script>
+</body>
+</html>

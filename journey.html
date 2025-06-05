@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Journey - The Giving Code</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="journey-styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">
+                <img src="https://i.postimg.cc/4d7XQ39T/The-Giving-Code-Logo.jpg" alt="Logo">
+            </a>
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="index.html#about">About</a>
+            <a href="how.html">How</a>
+            <a href="index.html#store">Store</a>
+            <a href="index.html#courses">Courses</a>
+            <a href="index.html#login">Login</a>
+        </div>
+    </nav>
+
+    <div class="game-container">
+        <!-- Game Title -->
+        <div class="stage-title">
+            <h1 id="current-stage">Stage 1: Brain Storming</h1>
+        </div>
+
+        <!-- Game Scene -->
+        <div class="game-scene">
+            <!-- Characters -->
+            <div id="player1" class="character character1 sitting">
+                <div class="eyes">
+                    <div class="eye left"></div>
+                    <div class="eye right"></div>
+                </div>
+                <div class="arms">
+                    <div class="arm left"></div>
+                    <div class="arm right"></div>
+                </div>
+                <div class="legs">
+                    <div class="leg left"></div>
+                    <div class="leg right"></div>
+                </div>
+            </div>
+            <div id="player2" class="character character2 sitting">
+                <div class="eyes">
+                    <div class="eye left"></div>
+                    <div class="eye right"></div>
+                </div>
+                <div class="arms">
+                    <div class="arm left"></div>
+                    <div class="arm right"></div>
+                </div>
+                <div class="legs">
+                    <div class="leg left"></div>
+                    <div class="leg right"></div>
+                </div>
+            </div>
+            
+            <!-- Room Elements -->
+            <div class="room" id="currentRoom">
+                <!-- Room content will be dynamically updated -->
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <div class="controls">
+            <div class="control-hint">Use ← → arrow keys to move</div>
+            <button id="publishBtn" style="display: none;">Publish Website</button>
+        </div>
+
+        <!-- Day/Night Cycle -->
+        <div class="day-night-cycle"></div>
+    </div>
+
+    <script src="journey-script.js"></script>
+</body>
+</html>
